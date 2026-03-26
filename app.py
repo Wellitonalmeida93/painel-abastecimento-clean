@@ -1,4 +1,4 @@
-flask import Flask, jsonify
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -9,6 +9,3 @@ def home():
 @app.route("/api/teste")
 def teste():
     return jsonify({"status": "ok"})
-
-if __name__ == "__main__":
-    app.run()
